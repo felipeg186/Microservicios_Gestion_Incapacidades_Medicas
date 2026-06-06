@@ -12,5 +12,18 @@ $capsule->addConnection([
     'collation' => 'utf8_unicode_ci',
     'prefix'    => '',
 ]);
+
+
+$capsule->addConnection([
+    'driver'    => 'mysql',
+    'host'      => '127.0.0.1',
+    'database'  => 'db_auth',
+    'username'  => 'root',
+    'password'  => '',
+    'charset'   => 'utf8',
+    'collation' => 'utf8_unicode_ci',
+    'prefix'    => '',
+], 'auth');
+
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
