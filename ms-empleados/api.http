@@ -35,23 +35,23 @@ Authorization: AQUI_VA_EL_TOKEN
 }
 
 ### Editar empleado
-PUT http://127.0.0.1:8002/api/empleados/1
+PUT http://127.0.0.1:8002/api/empleados/3
 Content-Type: application/json
 Authorization: AQUI_VA_EL_TOKEN
 
 {
-    "nombres": "Carlos",
-    "apellidos": "Ramirez",
-    "documento": "1000123456",
-    "correo": "carlos@empresa.com",
-    "telefono": "3001234567",
-    "cargo": "Analista Senior",
+   "nombres": "Pedro",
+    "apellidos": "Gonzalez",
+    "documento": "1000999888",
+    "correo": "pedro@empresa.com",
+    "telefono": "3005556677",
+    "cargo": "Desarrollador",
     "area": "Tecnologia",
-    "fecha_ingreso": "2024-01-15"
+    "fecha_ingreso": "2026-01-10"
 }
 
 ### Cambiar estado a inactivo
-PATCH http://127.0.0.1:8002/api/empleados/1/estado
+PATCH http://127.0.0.1:8002/api/empleados/3/estado
 Content-Type: application/json
 Authorization: AQUI_VA_EL_TOKEN
 
@@ -60,7 +60,7 @@ Authorization: AQUI_VA_EL_TOKEN
 }
 
 ### Cambiar estado a activo
-PATCH http://127.0.0.1:8002/api/empleados/1/estado
+PATCH http://127.0.0.1:8002/api/empleados/3/estado
 Content-Type: application/json
 Authorization: AQUI_VA_EL_TOKEN
 
