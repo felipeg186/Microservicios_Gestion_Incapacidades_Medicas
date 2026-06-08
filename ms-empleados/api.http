@@ -1,0 +1,69 @@
+### Listar todos los empleados
+GET http://127.0.0.1:8002/api/empleados
+Authorization: AQUI_VA_EL_TOKEN
+
+### Buscar empleado por documento
+GET http://127.0.0.1:8002/api/empleados?documento=1000123456
+Authorization: AQUI_VA_EL_TOKEN
+
+### Buscar empleado por area
+GET http://127.0.0.1:8002/api/empleados?area=Tecnologia
+Authorization: AQUI_VA_EL_TOKEN
+
+### Buscar empleado por estado
+GET http://127.0.0.1:8002/api/empleados?estado=activo
+Authorization: AQUI_VA_EL_TOKEN
+
+### Ver un empleado por ID
+GET http://127.0.0.1:8002/api/empleados/1
+Authorization: AQUI_VA_EL_TOKEN
+
+### Crear empleado
+POST http://127.0.0.1:8002/api/empleados
+Content-Type: application/json
+Authorization: AQUI_VA_EL_TOKEN
+
+{
+    "nombres": "Pedro",
+    "apellidos": "Gonzalez",
+    "documento": "1000999888",
+    "correo": "pedro@empresa.com",
+    "telefono": "3005556677",
+    "cargo": "Desarrollador",
+    "area": "Tecnologia",
+    "fecha_ingreso": "2026-01-10"
+}
+
+### Editar empleado
+PUT http://127.0.0.1:8002/api/empleados/1
+Content-Type: application/json
+Authorization: AQUI_VA_EL_TOKEN
+
+{
+    "nombres": "Carlos",
+    "apellidos": "Ramirez",
+    "documento": "1000123456",
+    "correo": "carlos@empresa.com",
+    "telefono": "3001234567",
+    "cargo": "Analista Senior",
+    "area": "Tecnologia",
+    "fecha_ingreso": "2024-01-15"
+}
+
+### Cambiar estado a inactivo
+PATCH http://127.0.0.1:8002/api/empleados/1/estado
+Content-Type: application/json
+Authorization: AQUI_VA_EL_TOKEN
+
+{
+    "estado": "inactivo"
+}
+
+### Cambiar estado a activo
+PATCH http://127.0.0.1:8002/api/empleados/1/estado
+Content-Type: application/json
+Authorization: AQUI_VA_EL_TOKEN
+
+{
+    "estado": "activo"
+}

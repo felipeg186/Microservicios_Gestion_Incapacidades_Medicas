@@ -1,0 +1,34 @@
+### Login con usuario
+POST http://127.0.0.1:8001/api/auth/login
+Content-Type: application/json
+
+{
+    "usuario": "admin",
+    "contrasena": "admin123"
+}
+
+### Login con correo
+POST http://127.0.0.1:8001/api/auth/login
+Content-Type: application/json
+
+{
+    "usuario": "admin@empresa.com",
+    "contrasena": "admin123"
+}
+
+### Login gestion humana
+POST http://127.0.0.1:8001/api/auth/login
+Content-Type: application/json
+
+{
+    "usuario": "gestionhumana",
+    "contrasena": "gh123"
+}
+
+### Validar sesion
+GET http://127.0.0.1:8001/api/auth/validar
+Authorization: AQUI_VA_EL_TOKEN
+
+### Logout
+POST http://127.0.0.1:8001/api/auth/logout
+Authorization: AQUI_VA_EL_TOKEN

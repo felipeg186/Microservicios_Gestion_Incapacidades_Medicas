@@ -1,0 +1,54 @@
+### Listar todas las incapacidades
+GET http://127.0.0.1:8003/api/incapacidades
+Authorization: AQUI_VA_EL_TOKEN
+
+### Buscar por empleado
+GET http://127.0.0.1:8003/api/incapacidades?empleado_id=1
+Authorization: AQUI_VA_EL_TOKEN
+
+### Buscar por estado
+GET http://127.0.0.1:8003/api/incapacidades?estado=aprobada
+Authorization: AQUI_VA_EL_TOKEN
+
+### Buscar por tipo
+GET http://127.0.0.1:8003/api/incapacidades?tipo=enfermedad_general
+Authorization: AQUI_VA_EL_TOKEN
+
+### Buscar por fecha
+GET http://127.0.0.1:8003/api/incapacidades?fecha_inicio=2026-06-01&fecha_fin=2026-06-30
+Authorization: AQUI_VA_EL_TOKEN
+
+### Ver una incapacidad por ID
+GET http://127.0.0.1:8003/api/incapacidades/1
+Authorization: AQUI_VA_EL_TOKEN
+
+### Registrar incapacidad
+POST http://127.0.0.1:8003/api/incapacidades
+Content-Type: application/json
+Authorization: AQUI_VA_EL_TOKEN
+
+{
+    "empleado_id": 1,
+    "fecha_inicio": "2026-06-10",
+    "fecha_fin": "2026-06-15",
+    "tipo": "enfermedad_general",
+    "diagnostico_general": "Gripa severa con fiebre",
+    "entidad_medica": "Clinica Central",
+    "observaciones": "Reposo total durante 5 dias"
+}
+
+### Editar incapacidad
+PUT http://127.0.0.1:8003/api/incapacidades/1
+Content-Type: application/json
+Authorization: AQUI_VA_EL_TOKEN
+
+{
+    "fecha_inicio": "2026-06-10",
+    "fecha_fin": "2026-06-18",
+    "observaciones": "Se amplian dias de reposo",
+    "estado": "en_revision"
+}
+
+### Finalizar incapacidad
+PATCH http://127.0.0.1:8003/api/incapacidades/1/finalizar
+Authorization: AQUI_VA_EL_TOKEN
