@@ -1,5 +1,5 @@
 <?php
-namespace App\Middleware;
+namespace App\Presentation\Middleware;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Psr\Http\Message\ResponseInterface as Response;

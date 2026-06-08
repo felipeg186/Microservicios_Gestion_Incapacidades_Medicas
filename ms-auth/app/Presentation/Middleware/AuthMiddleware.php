@@ -1,5 +1,5 @@
 <?php
-namespace App\Middleware;
+namespace App\Presentation\Middleware;
 
 use App\Models\Usuario;
 use Psr\Http\Message\ResponseInterface as Response;

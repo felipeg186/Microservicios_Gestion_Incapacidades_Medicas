@@ -5,7 +5,7 @@ require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../app/Config/Database.php';
 
 $cors = require __DIR__ . '/../app/Presentation/Middleware/CorsMiddleware.php';
-$routes = require __DIR__ . '/../app/Routes/auth.routes.php';
+$routes = require __DIR__ . '/../app/Presentation/Routes/auth.routes.php';
 
 $app = AppFactory::create();
 

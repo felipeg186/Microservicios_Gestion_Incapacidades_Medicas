@@ -1,6 +1,6 @@
 <?php
 use App\Repositories\IncapacidadRepository;
-use App\Middleware\AuthMiddleware;
+use App\Presentation\Middleware\AuthMiddleware;
 use Slim\App;
 use Slim\Routing\RouteCollectorProxy;
 
