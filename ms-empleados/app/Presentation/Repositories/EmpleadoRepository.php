@@ -1,5 +1,5 @@
 <?php
-namespace App\Repositories;
+namespace App\Presentation\Repositories;
 
 use App\Controllers\EmpleadoController;
 use Exception;

@@ -1,5 +1,5 @@
 <?php
-use App\Repositories\EmpleadoRepository;
+use App\Presentation\Repositories\EmpleadoRepository;
 use App\Presentation\Middleware\AuthMiddleware;
 use Slim\App;
 use Slim\Routing\RouteCollectorProxy;

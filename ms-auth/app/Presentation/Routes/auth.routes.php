@@ -1,5 +1,5 @@
 <?php
-use App\Repositories\AuthRepository;
+use App\Presentation\Repositories\AuthRepository;
 use App\Presentation\Middleware\AuthMiddleware;
 use Slim\App;
 use Slim\Routing\RouteCollectorProxy;
