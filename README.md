@@ -27,3 +27,6 @@ php -S 127.0.0.1:5500
 | Usuario | Contraseña | Rol |
 | admin   | admin123   | Administrador |
 | gestionhumana | gh123 | Gestión Humana 
+
+# iniciar el servicio
+http://127.0.0.1:5500/app_front/pages/login.html
