@@ -8,7 +8,7 @@ $cors = require __DIR__ . '/../app/Presentation/Middleware/CorsMiddleware.php';
 $routes = require __DIR__ . '/../app/Presentation/Routes/empleados.routes.php';
 
 $app = AppFactory::create();
-
+$cors($app);
 $routes($app);
 
 $app->run();

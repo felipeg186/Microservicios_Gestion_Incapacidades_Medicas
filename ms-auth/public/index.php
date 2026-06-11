@@ -9,6 +9,7 @@ $routes = require __DIR__ . '/../app/Presentation/Routes/auth.routes.php';
 
 $app = AppFactory::create();
 
+$cors($app);
 $routes($app);
 
 $app->run();
