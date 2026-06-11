@@ -21,3 +21,9 @@ php -S 127.0.0.1:8004 -t public
 # Terminal 5
 frontend-incapacidades
 php -S 127.0.0.1:5500
+
+
+## Credenciales de prueba
+| Usuario | Contraseña | Rol |
+| admin   | admin123   | Administrador |
+| gestionhumana | gh123 | Gestión Humana 
